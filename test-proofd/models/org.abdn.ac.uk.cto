@@ -1,0 +1,21 @@
+/**
+ * My commodity trading network
+ */
+namespace org.abdn.ac.uk
+asset Commodity identified by tradingSymbol {
+    o String tradingSymbol
+    o String description
+    o String status
+    o String complianceReport
+    --> BusinessEntity owner
+}
+participant BusinessEntity identified by businessId {
+    o String businessId
+    o String businessName
+}
+transaction Delivery {
+    --> Commodity commodity
+    --> BusinessEntity newOwner
+    o String status
+    o String complianceReport
+}
