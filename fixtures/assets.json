@@ -1,0 +1,8 @@
+{
+    "$class": "org.abdn.ac.uk.Commodity",
+    "tradingSymbol": "DeliveryItem",
+    "description": "DeliveryItem",
+    "status": "accepted",
+    "complianceReport": "report",
+    "owner": "resource:org.abdn.ac.uk.BusinessEntity#MestonIndustries"
+}
