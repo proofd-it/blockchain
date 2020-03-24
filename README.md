@@ -10,6 +10,10 @@ To deploy your own network:
 blokchain
 │   README.md
 │   startFabric.sh
+│   upload_transaction.py
+│
+└───fixtures
+│   │   ...
 │
 └───test-proofd
 │   │   ...
@@ -24,3 +28,6 @@ The most relevant file, defining the structure of entities stored on blockchain 
 - Asset, called "Commodity"
 - Participant, called "BusinessEntity"
 - Transaction, called "Delivery"
+
+## Restore Fixtures
+If you deploy the network somewhere else and would like to restore all fixtures, first follow steps under Deployment. Then, you can use the helper script `upload_transactions` (python3 required) to put the data from experiments back onto blockchain. Make sure that URL, [Username and Password](https://github.com/proofd-it/blockchain/blob/master/upload_transactions.py#L8-L9) is correct in the file. Finally, feel free to run the script (`$ python3 upload_transactions.py`) - keep in mind, it might take more than a few seconds to upload all data.
